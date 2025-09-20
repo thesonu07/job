@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Job Notification Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Government Job Notification Portal</h1>
+        <input type="text" id="search" placeholder="Search for job notifications..." onkeyup="searchJobs()">
+    </header>
+
+    <section id="job-list">
+        <!-- Job cards will be injected here -->
+    </section>
+
+    <div id="job-detail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">X</span>
+            <h2 id="job-title"></h2>
+            <p id="job-description"></p>
+            <p><strong>Department:</strong> <span id="job-department"></span></p>
+            <p><strong>Location:</strong> <span id="job-location"></span></p>
+            <p><strong>Last Date to Apply:</strong> <span id="job-deadline"></span></p>
+            <button onclick="applyForJob()">Apply Now</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Government Job Portal</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
